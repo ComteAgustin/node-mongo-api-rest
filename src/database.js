@@ -1,4 +1,4 @@
-// Import Mongoose and config connection uri
+// Import Mongoose and config connection url
 import mongoose from 'mongoose'
 import config from './config'
 
@@ -10,4 +10,5 @@ mongoose
         useCreateIndex: true
     })
 
+// Show that the connection is ok
 mongoose.connection.on('open', _ => console.log('DB is connected'))
